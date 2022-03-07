@@ -1,2 +1,2 @@
 #!/bin/bash
-awk -F: '$6 ~ "^/home/" {print $1}' ~/etc/passwd
+grep -oE '^[/*/]$' /etc/passwd
